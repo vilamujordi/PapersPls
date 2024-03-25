@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #print {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            box-shadow: 0 10px 20px 0 black;
+            border-radius: 10px;
+            margin: 15px;  
+            background-color: white;   
+        }
+
+        #passport {
+            padding: 5px;
+            box-shadow: 0 10px 20px 0 black;
+            border-radius: 10px;
+            margin: 15px; 
+            background-color: white;
+        }
+
+        #passportDesc {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #choices {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+            width: 15%;
+            margin-left: 42.5%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="generateUsers()">Start</button>
+    <hr>
+    <div id="print">Click start</div>
+    <br>
+    <hr>
+    <div id="choices">
+        <button onclick="playerAccept()">Accept</button>
+        <button onclick="playerDeny()">Deny</button>
+    </div>
+</body>
+<script src="./demo.js"></script>
+</html>
